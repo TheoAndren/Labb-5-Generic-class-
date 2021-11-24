@@ -18,21 +18,22 @@ namespace Labb_5__Generic_class_
         static void Main(string[] args)
         {
             Check1<int> C1 = new Check1<int>();
-            bool intResult1 = C1.ToCheck(15, 15);
-            Console.WriteLine("Int Result 1 = {0}", intResult1);
+            bool intResult = C1.ToCheck(15, 15);
+            Console.WriteLine("Int Result = {0}", intResult);
 
-            Check1<int> C2 = new Check1<int>();
-            bool intResult2 = C1.ToCheck(15, 16);
-            Console.WriteLine("Int Result 2 = {0}", intResult2);
+            Check1<double> C2 = new Check1<double>();
+            bool doubleResult = C1.ToCheck(1514141, 16512215);
+            Console.WriteLine("Double Result = {0}", doubleResult);
             Console.WriteLine("");
+            
             Check2<string> C3 = new Check2<string>();
-            bool stringResult1 = C3.ToCheck("Theo", "Kalle");
-            Console.WriteLine("String Result 1 = {0}", stringResult1);
+            bool stringResult = C3.ToCheck("Theo", "Theo");
+            Console.WriteLine("String Result = {0}", stringResult);
 
 
-            Check2<string> C4 = new Check2<string>();
-            bool stringResult2 = C4.ToCheck("Theo", "Theo");
-            Console.WriteLine("String Result 2 = {0}", stringResult2);
+            Check2<float> C4 = new Check2<float>();
+            bool floatResult = C4.ToCheck(241421421, 24214124);
+            Console.WriteLine("Float Result = {0}", floatResult);
 
 
 
